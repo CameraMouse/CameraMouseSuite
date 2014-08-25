@@ -38,35 +38,35 @@ namespace CameraMouseSuite
 
 	{
 
-        [DllImport("cxcore100.dll")]
+        [DllImport("cxcore100.dll, CallingConvention = CallingConvention.Cdecl")]
 
         private static extern void cvCopy(IntPtr src, IntPtr dst, IntPtr mask);
 
 
-        [DllImport("cxcore100.dll")]
+        [DllImport("cxcore100.dll, CallingConvention = CallingConvention.Cdecl")]
 
         private static extern void cvResetImageROI(IntPtr img);
 
 
-        [DllImport("cxcore100.dll")] 
+        [DllImport("cxcore100.dll, CallingConvention = CallingConvention.Cdecl")] 
 
         private static extern void cvSetImageROI(IntPtr img, CvRect rect);
 
 
 
-		[DllImport("cxcore100.dll")] 
+		[DllImport("cxcore100.dll", CallingConvention = CallingConvention.Cdecl)] 
 
 		private static extern IntPtr cvCreateImage(CvSize sz,int pdepth, int pchan);
 
 
 
-		[DllImport("cxcore100.dll")] 
+        [DllImport("cxcore100.dll", CallingConvention = CallingConvention.Cdecl)] 
 
-		private static extern int cvReleaseImage(ref IntPtr p); 
+		private static extern int cvReleaseImage(ref IntPtr p);
 
 
 
-		[DllImport("cv100.dll")] 
+        [DllImport("cv100.dll", CallingConvention = CallingConvention.Cdecl)] 
 
 		private static extern void cvCvtColor(IntPtr src, IntPtr dst, ColorConversion code);
 
@@ -78,7 +78,7 @@ namespace CameraMouseSuite
 
 
 
-        [DllImport("msvcrt.dll")]
+        [DllImport("msvcrt.dll", CallingConvention = CallingConvention.Cdecl)]
 
         static extern IntPtr memset(IntPtr dest, int val, int len);
 

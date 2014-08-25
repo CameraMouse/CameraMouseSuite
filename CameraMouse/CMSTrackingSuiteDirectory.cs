@@ -140,7 +140,6 @@ namespace CameraMouseSuite
             if (configDirectory == null)
                 throw new Exception("ConfigDirectory is null");
 
-
             SortedList<Type, string> types = new SortedList<Type, string>(new TypeComparer());
 
             ArrayList trackingSuitesList = new ArrayList();
@@ -266,6 +265,10 @@ namespace CameraMouseSuite
                         if (trackingSuite == null)
                             continue;
                         XmlSerializer xmSer = new XmlSerializer(type);
+                        if (!Directory.Exists(Path.GetDirectoryName(filename)))
+                        {
+                            Directory.CreateDirectory(Path.GetDirectoryName(filename));
+                        }
                         FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.ReadWrite, FileShare.Delete | FileShare.ReadWrite);
                         StreamWriter outFile = new StreamWriter(fs);
                         xmSer.Serialize(outFile, trackingSuite);

@@ -493,16 +493,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CameraMouseSuiteCommon\CameraMouseSuiteCommon.csproj">
-      <Project>{BDDA0588-AC59-4513-9717-B10771657970}</Project>
-      <Name>CameraMouseSuiteCommon</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StandardTrackingSuite\StandardTrackingSuite.csproj">
-      <Project>{F2B0C2DA-34D0-4334-8C5F-24CFB3C3065A}</Project>
-      <Name>StandardTrackingSuite</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Consent\" />
     <Folder Include="sconfig\" />
     <Folder Include="slib\" />
@@ -510,11 +500,24 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CameraMouseSuiteCommon\CameraMouseSuiteCommon.csproj">
+      <Project>{bdda0588-ac59-4513-9717-b10771657970}</Project>
+      <Name>CameraMouseSuiteCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StandardTrackingSuite\StandardTrackingSuite.csproj">
+      <Project>{f2b0c2da-34d0-4334-8c5f-24cfb3c3065a}</Project>
+      <Name>StandardTrackingSuite</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PreBuildEvent>if not exist slib md slib
+if not exist userlib md userlib</PreBuildEvent>
+    <PostBuildEvent>copy $(SolutionDir)lib\cv100.dll .
+copy $(SolutionDir)lib\cvcam100.dll .
+copy $(SolutionDir)lib\cxcore100.dll .
+copy $(SolutionDir)lib\highgui100.dll .
+copy $(SolutionDir)lib\libguide40.dll .</PostBuildEvent>
   </PropertyGroup>
 </Project>

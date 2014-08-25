@@ -204,6 +204,10 @@ namespace CameraMouseSuite
 
                 try
                 {
+                    if (!Directory.Exists(Path.GetDirectoryName(generalConfigFile)))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(generalConfigFile));
+                    }
                     FileStream fs = new FileStream(generalConfigFile, FileMode.Create, FileAccess.ReadWrite, FileShare.Delete | FileShare.ReadWrite);
                     TextWriter tw = new StreamWriter(fs);
                     XmlSerializer xmSer = new XmlSerializer(typeof(CMSConfig));
