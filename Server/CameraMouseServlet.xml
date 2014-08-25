@@ -1,0 +1,12 @@
+<Context reloadable="true" docBase="/var/lib/tomcat5/wars/CMSLogServer.war">
+
+<Resource name="jdbc/DB" auth="Container"
+       type="javax.sql.DataSource" removeAbandoned="true"
+       removeAbandonedTimeout="30" maxActive="100"
+       maxIdle="30" maxWait="10000" username="cmuser"
+       password="EeWei0sh"
+       driverClassName="com.mysql.jdbc.Driver"
+       autoReconnect="true"
+       url="jdbc:mysql://cs-db.bu.edu:3306/cameramouse"/>
+   
+</Context>

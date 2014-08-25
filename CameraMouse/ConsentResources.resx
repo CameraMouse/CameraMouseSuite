@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdultRTF" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 CMR10;}{\f1\fnil\fcharset0 CMTI10;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Msftedit 5.41.21.2508;}\viewkind4\uc1\pard\f0\fs20 The purpose of this form is to document that consent was obtained from a person over 18 years of age to participate in a research study. \par
+\i\f1\par
+\b Title of Research Study\b0 : \i0\f0 World-wide Collaboration to Empower People with Disabilities to Improve Assistive Interfaces.\par
+\par
+\b\i\f1 Investigator\b0 : \i0\f0 Margrit Betke, Ph.D., Email: \ul betke@cs.bu.edu\ulnone\par
+\par
+\b\i\f1 Purpose\b0 : \i0\f0 The objective of this project is to help people with severe disabilities gain access to a computer and thereby obtain a tool for communication. \par
+\par
+If you agree to participate in this research project, the following things will happen:\par
+\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-720\li720 We will collect information about natural usage of the Camera Mouse Suites by sending text messages to our computer.\par
+{\pntext\f2\'B7\tab}You do not need to perform any explicit experiments or testing procedures for us. The messages will be sent automatically in the background.\par
+{\pntext\f2\'B7\tab}You can select the level of information sent to us, from sending no messages to sending information about mouse pointer movements, clicking events, current Camera Mouse settings, and training data. No images are sent.\par
+\pard\par
+\b\i\f1 Confidentiality\b0 : \i0\f0 All data obtained in this research project will be considered confidential. It will be used for research purposes only. Access to the digital data will be restricted. \par
+\par
+\b\i\f1 Benefits\b0 : \i0\f0 Participation in this study introduces you to a new computer tool for communication and education. The logging messages sent to us from your system will help us improve the Camera Mouse Suite system. With your help, our system will become easier to use by people with movement disabilities.\par
+\par
+\b\i\f1 Expected Duration\b0 : \i0\f0 The data collection will occur as long as you are enrolled in our research study.\par
+\par
+\b\i\f1 Risks\b0 : \i0 There are no additional risks in participating in the research study beyond normal usage of the Camera Mouse Suite software. \f0\par
+\par
+\b\i\f1 Questions\b0 : \i0\f0 The researcher has provided information to you about this study and has offered to answer your questions. If you have any questions about your rights as a participant in a research study, contact the Coordinator of the Institutional Review Board, Boston University, at 617-358-6115.\par
+\par
+\b\i\f1 Right to Refuse or Withdraw\b0 : \i0\f0 Your participation in the research study is entirely voluntary. You may use the Camera Mouse Suite without participation in the research study. You are free to refuse to take part or withdraw at any time. There is no penalty for withdrawal.\par
+}</value>
+  </data>
+  <data name="ChildRTF" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 CMR10;}{\f1\fnil\fcharset0 CMTI10;}{\f2\fswiss\fcharset0 Arial;}{\f3\fnil\fcharset2 Symbol;}}
+{\*\generator Msftedit 5.41.21.2508;}\viewkind4\uc1\pard\f0\fs20 The purpose of this form is to document that consent was obtained from a person between the ages of 7 and 18 to participate in a research study. If the minor cannot read this form, it must be read to him or her.\par
+\i\f1\par
+\b Title of Research Study\b0 : \i0\f0 World-wide Collaboration to Empower People with Disabilities to Improve Assistive Interfaces.\par
+\par
+\par
+\b\i\f1 Investigator\b0 : \i0\f0 Margrit Betke, Ph.D., Email: \ul betke@cs.bu.edu\ulnone\par
+\par
+\b\i\f1 Purpose\b0 : \i0\f0 The objective of this project is to help people with severe disabilities gain access to a computer and thereby obtain a tool for communication. The project collects information on the computer and sends it to the makers of the program.\par
+\par
+If you agree to participate in this research project, the following things will happen:\par
+\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720 We will collect information about the Camera Mouse by sending messages to our computer.\par
+{\pntext\f3\'B7\tab}You do not need to perform any experiments for us.\par
+{\pntext\f3\'B7\tab}You can select the level of information sent to us, from sending no messages to sending information such as where the mouse pointer is and when you click it.\par
+\pard\par
+\b\i\f1 Confidentiality\b0 : \i0\f0 All information and video data obtained in this research project will be considered confidential. It will be used for research purposes only. Access to the digital data will be restricted.\par
+\par
+\b\i\f1 Benefits\b0 : \i0\f0 Participation in this study introduces you to a new computer tool for communication and education. You will help improve a mouse replacement system used by people worldwide. With your help, our system will become easier to use by people with movement disabilities.\par
+\par
+\b\i\f1 Expected Duration\b0 : \i0\f0 The data collection will occur as long as you are enrolled in our research study.\i\f1\par
+\i0\f0\par
+\b\i\f1 Questions\b0 : \i0\f0 The researcher has provided information to you about this study and has offered to answer your questions. If you have any questions about your rights as a participant in a research study, contact the Coordinator of the Institutional Review Board, Boston University, at 617-358-6115.\par
+\par
+\b\i\f1 Right to Refuse or Withdraw\b0 : \i0\f0 Your participation in the research study is entirely voluntary. You may use the Camera Mouse without participation in the research study. You are free to refuse to take part or withdraw at any time. There is no penalty for withdrawal.\par
+\par
+\f2\par
+}</value>
+  </data>
+  <data name="ParentRTF" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 CMR10;}{\f1\fnil\fcharset0 CMTI10;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Msftedit 5.41.21.2508;}\viewkind4\uc1\pard\f0\fs20 The purpose of this form is to document that consent was obtained from a parent or guardian of a minor to participate in a research study. \par
+\i\f1\par
+\b Title of Research Study\b0 : \i0\f0 World-wide Collaboration to Empower People with Disabilities to Improve Assistive Interfaces.\par
+\par
+\b\i\f1 Investigator\b0 : \i0\f0 Margrit Betke, Ph.D., Email: \ul betke@cs.bu.edu\ulnone\par
+\par
+\b\i\f1 Purpose\b0 : \i0\f0 The objective of this project is to help people with severe disabilities gain access to a computer and thereby obtain a tool for communication. \par
+\par
+If you agree for your child or ward to participate in this research project, the following things will happen:\par
+\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-720\li720 We will collect information about natural usage of the Camera Mousby sending text messages to our computer.\par
+{\pntext\f2\'B7\tab}Your child/ward does not need to perform any explicit experiments or testing procedures for us. The messages will be sent automatically in the background.\par
+{\pntext\f2\'B7\tab}You can select the level of information sent to us, from sending no messages to sending information about mouse pointer movements, clicking events, current Camera Mouse settings, and training data. No images are sent.\par
+\pard\par
+\b\i\f1 Confidentiality\b0 : \i0\f0 All data obtained in this research project will be considered confidential. It will be used for research purposes only. Access to the digital data will be restricted. \par
+\par
+\b\i\f1 Benefits\b0 : \i0\f0 Participation in this study introduces your child/ward to a new computer tool for communication and education. Your child/ward will help improve a mouse replacement system used by people worldwide. With your help, our system will become easier to use by people with movement disabilities.\par
+\par
+\b\i\f1 Expected Duration\b0 : \i0\f0 The data collection will occur as long as you are enrolled in our research study.\par
+\par
+\b\i\f1 Risks\b0 : \i0 There are no additional risks in participating in the research study beyond normal usage of the Camera Mouse Suite software. \f0\par
+\par
+\b\i\f1 Questions\b0 : \i0\f0 The researcher has provided information to you about this study and has offered to answer your questions.  If you have any questions about your rights as a participant in a research study, contact the Coordinator of the Institutional Review Board, Boston University, at 617-358-6115.\par
+\par
+\b\i\f1 Right to Refuse or Withdraw\b0 : \i0\f0 The participation of your child/ward in the research study is entirely voluntary. He or she may use the Camera Mouse Suite without participation in the research study. You and your child/ward are free to refuse to take part or withdraw at any time.  There is no penalty for withdrawal.\par
+}</value>
+  </data>
+</root>

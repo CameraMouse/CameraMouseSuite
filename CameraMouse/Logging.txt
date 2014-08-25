@@ -1,0 +1,30 @@
+﻿
+	Ai				AHMLogRealtimeFeatureImagesEvent		X
+	Am				AHMLogSuiteEvent						X
+	Ar				AHMLogRealtimeEvent						X
+	As				AHMLogStateEvent						X					
+	At				AHMLogTrainingEvent						No
+	Bl				CMSLogBlinkLinkStandardTrackingEvent	X
+	Bls				CMSLogBlinkLinkSimpleTrackingEvent		X
+	Blt				BlinkLinkStandardTrackingSuite 
+	C				CMSLogCursorEvent						X
+	Cf				CMSLogCameraFoundEvent					X
+	Cl				CMSLogCameraLostEvent					X
+	Es				CMSLogEmptySuiteEvent					X
+	Ex				CMSLogExceptionEvent					Y
+	Fm				CMSLogFrameEvent						X
+	Gc				CMSLogGeneralConfigEvent				No
+	K				CMSLogClickEvent						X
+	Lb				CMSLogBehaviorEvent						x
+	Ms				CMSLogMessageEvent						X
+	Nd				CMSLogEndEvent							X
+	P				CMSLogPointerEvent						X
+	Pss				CMSLogProcessesEvent					X
+	Sc				CMSLogStateChangeEvent					X
+	St				CMSLogStartEvent						X
+	Std				CMSLogStandardSuiteEvent				X
+	StdS			CMSLogStandardStateEvent				X 
+	Tc				CMSLogTogglerConfigEvent				X
+	Wc				CMSLogWindowChangedEvent				X
+	Vd				CMSLogVideoSizesDeterminedEvent			X
+	Xp				CMSLogExperimentFrameEvent

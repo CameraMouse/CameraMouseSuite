@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BD12DFA-B7A4-4A6F-95AB-9018D3BA40DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AHMTrackingSuite</RootNamespace>
+    <AssemblyName>AHMTrackingSuite</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AHMUtility, Version=1.0.3799.24237, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CameraMouse\bin\x86\Release\userlib\AHMUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AHMClickMovementPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AHMClickMovementPanel.Designer.cs">
+      <DependentUpon>AHMClickMovementPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AHMMovementClickModule.cs" />
+    <Compile Include="AHMMovementClickTrackingSuite.cs" />
+    <Compile Include="AHMMovingAverage.cs" />
+    <Compile Include="AHMRectangleFakeCursor.cs" />
+    <Compile Include="AHMSetup.cs" />
+    <Compile Include="AHMSimpleTrackingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AHMSimpleTrackingPanel.Designer.cs">
+      <DependentUpon>AHMSimpleTrackingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AHMSimpleTrackingSuite.cs" />
+    <Compile Include="AHMStateExtraInfo.cs" />
+    <Compile Include="AHMTrackingModule.cs" />
+    <Compile Include="AHMTrackingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AHMTrackingPanel.Designer.cs">
+      <DependentUpon>AHMTrackingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AHMTrackingSuite.cs" />
+    <Compile Include="AHMLogSuiteEvent.cs" />
+    <Compile Include="ClickingThresholdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClickingThresholdForm.Designer.cs">
+      <DependentUpon>ClickingThresholdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectangleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RectangleForm.Designer.cs">
+      <DependentUpon>RectangleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThresholdControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThresholdControl.Designer.cs">
+      <DependentUpon>ThresholdControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CameraMouseSuiteCommon\CameraMouseSuiteCommon.csproj">
+      <Project>{BDDA0588-AC59-4513-9717-B10771657970}</Project>
+      <Name>CameraMouseSuiteCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StandardTrackingSuite\StandardTrackingSuite.csproj">
+      <Project>{F2B0C2DA-34D0-4334-8C5F-24CFB3C3065A}</Project>
+      <Name>StandardTrackingSuite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AHMClickMovementPanel.resx">
+      <DependentUpon>AHMClickMovementPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AHMSimpleTrackingPanel.resx">
+      <DependentUpon>AHMSimpleTrackingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AHMTrackingPanel.resx">
+      <DependentUpon>AHMTrackingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClickingThresholdForm.resx">
+      <DependentUpon>ClickingThresholdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RectangleForm.resx">
+      <DependentUpon>RectangleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThresholdControl.resx">
+      <DependentUpon>ThresholdControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>COPY    "$(TargetPath)" "$(SolutionDir)CameraMouse\$(OutDir)slib"
+</PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46894D25-5A60-4E85-959D-3FB69EE4F2B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BlinkLinkStandardTrackingSuite</RootNamespace>
+    <AssemblyName>BlinkLinkStandardTrackingSuite</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AHMUtility, Version=1.0.3799.24237, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CameraMouse\bin\x86\Release\userlib\AHMUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlinkLinkAHMTrackingModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlinkLinkClickControlSimpleModule.cs" />
+    <Compile Include="BlinkLinkClickControlSimplePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlinkLinkClickControlSimplePanel.Designer.cs">
+      <DependentUpon>BlinkLinkClickControlSimplePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlinkLinkEyeClickData.cs" />
+    <Compile Include="BlinkLinkLogTemplatesEvent.cs" />
+    <Compile Include="BlinkLinkStandardTrackingModule.cs" />
+    <Compile Include="BlinkLinkClickControlModule.cs" />
+    <Compile Include="BlinkLinkClickControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlinkLinkClickControlPanel.Designer.cs">
+      <DependentUpon>BlinkLinkClickControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlinkLinkMouseControlModule.cs" />
+    <Compile Include="CMSBlinkLinkStandardTrackingSimpleSuite.cs" />
+    <Compile Include="CMSBlinkLinkStandardTrackingSuite.cs" />
+    <Compile Include="CMSLogBlinkLinkStandardTrackingEvent.cs" />
+    <Compile Include="EyeClicker.cs" />
+    <Compile Include="EyeClickerFiniteStateMachine.cs" />
+    <Compile Include="EyeStatusWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EyeStatusWindow.designer.cs">
+      <DependentUpon>EyeStatusWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastBitmap.cs" />
+    <Compile Include="IBlinkDetector.cs" />
+    <Compile Include="NccBlinkDetector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BlinkLinkMouseControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlinkLinkMouseControlPanel.Designer.cs">
+      <DependentUpon>BlinkLinkMouseControlPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AHMTrackingSuite\AHMTrackingSuite.csproj">
+      <Project>{4BD12DFA-B7A4-4A6F-95AB-9018D3BA40DF}</Project>
+      <Name>AHMTrackingSuite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CameraMouseSuiteCommon\CameraMouseSuiteCommon.csproj">
+      <Project>{BDDA0588-AC59-4513-9717-B10771657970}</Project>
+      <Name>CameraMouseSuiteCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StandardTrackingSuite\StandardTrackingSuite.csproj">
+      <Project>{F2B0C2DA-34D0-4334-8C5F-24CFB3C3065A}</Project>
+      <Name>StandardTrackingSuite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlinkLinkClickControlPanel.resx">
+      <DependentUpon>BlinkLinkClickControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlinkLinkClickControlSimplePanel.resx">
+      <DependentUpon>BlinkLinkClickControlSimplePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EyeStatusWindow.resx">
+      <DependentUpon>EyeStatusWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlinkLinkMouseControlPanel.resx">
+      <DependentUpon>BlinkLinkMouseControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closedEye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doubleClickMouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragEndMouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragStartMouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\initializationEye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftClickMouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftClickWaitingImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noActionMouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openEye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightClickMouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightClickWaitingImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>COPY    "$(TargetPath)" "$(SolutionDir)CameraMouse\$(OutDir)slib"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>
